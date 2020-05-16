@@ -3,6 +3,8 @@
 /.directory
 /data
 /work
+/dist
 .Rproj.user
 spotify-sequence.Rproj
 .Rbuildignore
+.Rhistory
