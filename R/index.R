@@ -1,7 +1,10 @@
 
 # includes
 suppressWarnings(suppressMessages(suppressPackageStartupMessages({
+	.libPaths("~/R/x86_64-pc-linux-gnu-library/3.5/")
+	#install.packages(c("ggplot2", "dplyr", "DBI", "data.table"))
 	source("R/functions.R")
+	#load(c("ggplot2", "dplyr", "data.table", "DBI"))
 	library("ggplot2")
 	library("dplyr")
 	require(data.table)
@@ -11,12 +14,16 @@ suppressWarnings(suppressMessages(suppressPackageStartupMessages({
 data_location = "/media/shadash/321cfbdb-669b-484c-bf65-5e5e3ffbb541/"
 
 # load sequences
+print("loading data...")
 t <- read.table(paste(data_location, "track_features/tf_000000000000.csv", sep=""), TRUE, ",") %>% select(track_id, tempo, valence, us_popularity_estimate, acousticness, beat_strength, bounciness, danceability, energy, flatness, instrumentalness, liveness, loudness, mechanism, organism, speechiness)
 t <- rbind(t, read.table(paste(data_location, "track_features/tf_000000000001.csv", sep=""), TRUE, ",") %>% select(track_id, tempo, valence, us_popularity_estimate, acousticness, beat_strength, bounciness, danceability, energy, flatness, instrumentalness, liveness, loudness, mechanism, organism, speechiness))
-d <- read.table(paste(data_location, "training_set/log_mini.csv", sep=""), TRUE, ",")
+d <- read.table(paste(data_location, "log_mini.csv", sep=""), TRUE, ",")
+print("complete!\n")
 
 # pre-processing
+print("pre-processing...")
 d = d %>% inner_join(t, by=c("track_id_clean"="track_id")) %>% arrange(session_id, session_position)
+rm(t)
 df = data.table(d)
 df[ , valence_diff := valence - shift(valence), by = session_id]
 df[ , valence_diff_abs := abs(valence - shift(valence)), by = session_id]
@@ -52,6 +59,7 @@ df[ , valid:=session_position-shift(session_position)==1, by = session_id]
 d = setDF(df)
 rm(df)
 d = d %>% filter(valid==TRUE) %>% mutate(skipped=ifelse(not_skipped=="true", 0, 1))
+print("complete!")
 
 # visualization
 #p=ggplot(d, aes(x=vdiff, color=factor(skipped, levels=c(1, 0), labels=c("true", "false")))) +
@@ -75,7 +83,9 @@ d = d %>% filter(valid==TRUE) %>% mutate(skipped=ifelse(not_skipped=="true", 0, 
 #ggsave("dist/tempo_abs.png", p, scale=1, dpi=300)
 
 # statistics
-sink("dist/glm.m");
+print("computing models...")
+#sink("dist/glm.m");
 m=glm(skipped ~ valence_diff_abs + tempo_diff_abs + popularity_diff_abs + acousticness_diff_abs + beat_strength_diff_abs + bounciness_diff_abs + danceability_diff_abs + energy_diff_abs + flatness_diff_abs + instrumentalness_diff_abs + liveness_diff_abs + loudness_diff_abs + mechanism_diff_abs + organism_diff_abs + speechiness_diff_abs, d, family = "binomial")
-summary(m)
-sink()
+print(summary(m))
+#sink()
+print("complete!")

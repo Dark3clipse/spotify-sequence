@@ -242,6 +242,7 @@
       <w>.__C__dgTMatrix</w>
       <w>.__C__dgeMatrix</w>
       <w>.__C__diagonalMatrix</w>
+      <w>.__C__double</w>
       <w>.__C__dpoMatrix</w>
       <w>.__C__dppMatrix</w>
       <w>.__C__dsCMatrix</w>
@@ -657,6 +658,7 @@
       <w>DBI</w>
       <w>DDT</w>
       <w>DELETE</w>
+      <w>DF2formula</w>
       <w>DNase</w>
       <w>Damian</w>
       <w>Demo.growth</w>
@@ -1079,6 +1081,7 @@
       <w>Sitka</w>
       <w>Sitka89</w>
       <w>Skye</w>
+      <w>Sl.inirep</w>
       <w>Sl.initial.repara</w>
       <w>Sl.repara</w>
       <w>Sl.setup</w>
@@ -1260,7 +1263,10 @@
       <w>X11.options</w>
       <w>X11Font</w>
       <w>X11Fonts</w>
+      <w>XWXd</w>
+      <w>XWyd</w>
       <w>XYZ</w>
+      <w>Xbd</w>
       <w>Yule</w>
       <w>Yule.inv</w>
       <w>Yule2phi</w>
@@ -1287,6 +1293,7 @@
       <w>`%+%`</w>
       <w>`%+replace%`</w>
       <w>`%-&gt;%`</w>
+      <w>`%.%`</w>
       <w>`%...!%`</w>
       <w>`%...&gt;%`</w>
       <w>`%...T!%`</w>
@@ -1552,6 +1559,7 @@
       <w>`.__T__label:maptools`</w>
       <w>`.__T__length:base`</w>
       <w>`.__T__loadMethod:methods`</w>
+      <w>`.__T__log:base`</w>
       <w>`.__T__logLik:stats`</w>
       <w>`.__T__lu:Matrix`</w>
       <w>`.__T__make.db.names:DBI`</w>
@@ -1707,6 +1715,7 @@
       <w>`[[.data.frame`</w>
       <w>`[[.factor`</w>
       <w>`[[.numeric_version`</w>
+      <w>`[[&lt;-.POSIXlt`</w>
       <w>`[[&lt;-.data.frame`</w>
       <w>`[[&lt;-.factor`</w>
       <w>`[[&lt;-.numeric_version`</w>
@@ -2283,6 +2292,7 @@
       <w>aspell_package_Rd_files</w>
       <w>aspell_package_vignettes</w>
       <w>aspell_write_personal_dictionary_file</w>
+      <w>asplit</w>
       <w>assertCondition</w>
       <w>assertError</w>
       <w>assertWarning</w>
@@ -2997,6 +3007,7 @@
       <w>con2tr</w>
       <w>concatHtmlTables</w>
       <w>concordance</w>
+      <w>concordancefit</w>
       <w>concurvity</w>
       <w>cond</w>
       <w>condense</w>
@@ -3011,6 +3022,7 @@
       <w>confint</w>
       <w>confint.default</w>
       <w>confint.lm</w>
+      <w>conflictRules</w>
       <w>conflicts</w>
       <w>conformMethod</w>
       <w>congeneric.sim</w>
@@ -3171,6 +3183,7 @@
       <w>coxph.detail</w>
       <w>coxph.fit</w>
       <w>coxph.wtest</w>
+      <w>coxsurv.fit</w>
       <w>cpgram</w>
       <w>cppFunction</w>
       <w>cpp_object_dummy</w>
@@ -3408,6 +3421,7 @@
       <w>degAxis</w>
       <w>degreeLabelsEW</w>
       <w>degreeLabelsNS</w>
+      <w>delayGrob</w>
       <w>delayedAssign</w>
       <w>delete.response</w>
       <w>delimMatch</w>
@@ -3533,7 +3547,9 @@
       <w>deviance</w>
       <w>deviance.nlrq</w>
       <w>deviance.slm</w>
+      <w>deviceDim</w>
       <w>deviceIsInteractive</w>
+      <w>deviceLoc</w>
       <w>dexp</w>
       <w>df</w>
       <w>df.kernel</w>
@@ -3560,6 +3576,7 @@
       <w>diag.panel.splom</w>
       <w>diagN2U</w>
       <w>diagU2N</w>
+      <w>diagXVXd</w>
       <w>diagram</w>
       <w>dialogViewer</w>
       <w>diamonds</w>
@@ -3821,6 +3838,7 @@
       <w>empinf</w>
       <w>empty</w>
       <w>empty.dump</w>
+      <w>emptyCoords</w>
       <w>emptyMethodsList</w>
       <w>emptyenv</w>
       <w>enableBookmarking</w>
@@ -4380,6 +4398,7 @@
       <w>gamma.dispersion</w>
       <w>gamma.shape</w>
       <w>gammainc</w>
+      <w>gammals</w>
       <w>gammaz</w>
       <w>gapply</w>
       <w>gasprice</w>
@@ -4804,10 +4823,12 @@
       <w>gridparameters</w>
       <w>grob</w>
       <w>grobAscent</w>
+      <w>grobCoords</w>
       <w>grobDescent</w>
       <w>grobHeight</w>
       <w>grobName</w>
       <w>grobPathListing</w>
+      <w>grobPoints</w>
       <w>grobTree</w>
       <w>grobWidth</w>
       <w>grobX</w>
@@ -4930,6 +4951,8 @@
       <w>hcell2xy</w>
       <w>hcell2xyInt</w>
       <w>hcl</w>
+      <w>hcl.colors</w>
+      <w>hcl.pals</w>
       <w>hcl_color_picker</w>
       <w>hcl_palettes</w>
       <w>hcl_wizard</w>
@@ -5411,6 +5434,7 @@
       <w>isCorrelation</w>
       <w>isCovariance</w>
       <w>isDiagonal</w>
+      <w>isEmptyCoords</w>
       <w>isFALSE</w>
       <w>isGeneric</w>
       <w>isGrammarSymbol</w>
@@ -6236,6 +6260,8 @@
       <w>melt</w>
       <w>melt.data.table</w>
       <w>mem.limits</w>
+      <w>mem.maxNSize</w>
+      <w>mem.maxVSize</w>
       <w>memCompress</w>
       <w>memDecompress</w>
       <w>memoise</w>
@@ -6618,6 +6644,7 @@
       <w>null</w>
       <w>null.space.dimension</w>
       <w>nullGrob</w>
+      <w>nullfile</w>
       <w>nullspace</w>
       <w>num2str</w>
       <w>numDeriv</w>
@@ -6753,6 +6780,7 @@
       <w>ordinal_french</w>
       <w>ordinal_spanish</w>
       <w>orth</w>
+      <w>osVersion</w>
       <w>os_name</w>
       <w>outer</w>
       <w>outlier</w>
@@ -6784,6 +6812,7 @@
       <w>packageEvent</w>
       <w>packageHasNamespace</w>
       <w>packageName</w>
+      <w>packageNotFoundError</w>
       <w>packageSlot</w>
       <w>packageStartupMessage</w>
       <w>packageStatus</w>
@@ -9085,6 +9114,8 @@
       <w>storage.mode</w>
       <w>stormer</w>
       <w>str</w>
+      <w>str2expression</w>
+      <w>str2lang</w>
       <w>str2num</w>
       <w>strOptions</w>
       <w>strRep</w>
@@ -9502,11 +9533,13 @@
       <w>survConcordance</w>
       <w>survConcordance.fit</w>
       <w>survSplit</w>
+      <w>survcheck</w>
       <w>survdiff</w>
       <w>survexp</w>
       <w>survey</w>
       <w>survfit</w>
       <w>survfit.formula</w>
+      <w>survfit0</w>
       <w>survfitCI</w>
       <w>survfitKM</w>
       <w>survfitcoxph.fit</w>
@@ -10234,6 +10267,7 @@
       <w>updateVarSelectInput</w>
       <w>updateVarSelectizeInput</w>
       <w>updateWts</w>
+      <w>update_PACKAGES</w>
       <w>update_collate</w>
       <w>update_geom_defaults</w>
       <w>update_labels</w>
@@ -10565,6 +10599,7 @@
       <w>vignette</w>
       <w>vignetteDepends</w>
       <w>vignetteEngine</w>
+      <w>vignetteInfo</w>
       <w>vignette_roclet</w>
       <w>violinBy</w>
       <w>viridis</w>
